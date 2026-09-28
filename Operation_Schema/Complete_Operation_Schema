@@ -22,3 +22,6 @@
 | OP18 | Verify Conditions Before Resuming | Door has been closed after being opened | Environmental readings and sensor status | Conditions are confirmed suitable or further action is required. |
 | OP19 | Switch to Emergency Power | Normal power is lost and emergency power is available | Power-loss signal | System operates using emergency power. |
 | OP20 | Record Power Incident | Normal power is lost and emergency power is unavailable | Power-loss information | Power-loss incident is recorded. |
+| OP21 | Perform Safe Shutdown | Normal and emergency power are unavailable | Power failure condition | System is safely shut down. |
+| OP22 | Verify Safe Artifact Removal | Operator requests artifact removal | Chamber condition and protection status | Artifact removal is confirmed safe or denied. |
+| OP23 | Authorize Artifact Removal | Chamber is safe and no protection response is active | Safety verification result | Operator is authorized to remove the artifact. |
