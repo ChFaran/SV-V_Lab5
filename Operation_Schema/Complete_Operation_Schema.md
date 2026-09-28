@@ -2,26 +2,23 @@
 
 | ID | Operation | Pre-Condition | Input | Post-Condition |
 |---|---|---|---|---|
-| OP01 | Perform Self-Check | Chamber is powered on | Sensor and control-device status | Essential devices are verified as operational or a fault is detected. |
-| OP02 | Detect Artifact Placement | Chamber is available for an artifact | Artifact placement event | Artifact presence is detected. |
-| OP03 | Record Artifact Information | Artifact is inside the chamber | Artifact identification information | Artifact information is stored. |
-| OP04 | Load Environmental Profile | Artifact information is available | Required environmental limits | Environmental profile is loaded. |
-| OP05 | Monitor Environmental Conditions | Artifact is inside and sensors are operational | Temperature and humidity readings | Environmental conditions are continuously monitored. |
-| OP06 | Check Door Status | Chamber is powered and operational | Door sensor reading | Current door status is determined. |
-| OP07 | Correct Temperature | Temperature is outside the permitted range | Current and required temperature | Temperature correction is initiated. |
-| OP08 | Correct Humidity | Humidity is outside the permitted range | Current and required humidity | Humidity correction is initiated. |
-| OP09 | Verify Environmental Recovery | Environmental correction has been issued | Updated sensor readings | Environmental recovery is confirmed or rejected. |
-| OP10 | Monitor Recovery Period | Environmental condition is outside its permitted range | Sensor readings and recovery time | Recovery success or failure is determined. |
-| OP11 | Activate Additional Environmental Controls | Normal correction has failed | Protection condition | Additional environmental controls are activated. |
-| OP12 | Reduce Light Exposure | Artifact requires additional protection | Light-control command | Light exposure is reduced. |
-| OP13 | Generate Operator Alert | Abnormal condition requires attention | Fault or protection information | Alert is generated for the museum operator. |
-| OP14 | Detect Significant Vibration | Artifact is inside and vibration sensor is operational | Vibration sensor reading | Significant vibration is detected or ruled out. |
-| OP15 | Suspend Risk-Increasing Activities | Significant vibration is detected | Vibration event | Risk-increasing activities are suspended. |
-| OP16 | Verify Vibration Stabilization | Vibration has decreased | Vibration readings and stabilization period | Stable vibration condition is confirmed or rejected. |
-| OP17 | Suspend Conservation Activities | Conservation activities are active and door is opened | Door-open event | Normal conservation activities are suspended. |
-| OP18 | Verify Conditions Before Resuming | Door has been closed after being opened | Environmental readings and sensor status | Conditions are confirmed suitable or further action is required. |
-| OP19 | Switch to Emergency Power | Normal power is lost and emergency power is available | Power-loss signal | System operates using emergency power. |
-| OP20 | Record Power Incident | Normal power is lost and emergency power is unavailable | Power-loss information | Power-loss incident is recorded. |
-| OP21 | Perform Safe Shutdown | Normal and emergency power are unavailable | Power failure condition | System is safely shut down. |
-| OP22 | Verify Safe Artifact Removal | Operator requests artifact removal | Chamber condition and protection status | Artifact removal is confirmed safe or denied. |
-| OP23 | Authorize Artifact Removal | Chamber is safe and no protection response is active | Safety verification result | Operator is authorized to remove the artifact. |
+| OP01 | Perform Self-Check | Chamber is powered on | Sensor and control-device status | Essential devices are verified. |
+| OP02 | Record Artifact Information | Artifact is placed inside | Artifact identification | Artifact information is recorded. |
+| OP03 | Load Environmental Profile | Artifact information is recorded | Environmental limits | Required environmental profile is loaded. |
+| OP04 | Monitor Environmental Conditions | Artifact is inside and sensors are working | Temperature and humidity readings | Environmental conditions are monitored. |
+| OP05 | Check Door Status | Chamber is operational | Door sensor reading | Door status is determined. |
+| OP06 | Correct Temperature | Temperature is outside permitted range | Current temperature and required temperature | Temperature correction is initiated. |
+| OP07 | Correct Humidity | Humidity is outside permitted range | Current humidity and required humidity | Humidity correction is initiated. |
+| OP08 | Verify Environmental Recovery | Correction has been initiated | Updated sensor readings | Environmental recovery is confirmed or rejected. |
+| OP09 | Activate Additional Environmental Controls | Environmental condition cannot be corrected normally | Protection condition | Additional controls are activated. |
+| OP10 | Reduce Light Exposure | Artifact requires protection | Light-control command | Light exposure is reduced. |
+| OP11 | Generate Operator Alert | Abnormal condition occurs | Alert information | Museum operator is alerted. |
+| OP12 | Detect Significant Vibration | Artifact is inside the chamber | Vibration sensor reading | Significant vibration is detected. |
+| OP13 | Suspend Risk-Increasing Activities | Significant vibration is detected | Vibration event | Risk-increasing activities are suspended. |
+| OP14 | Verify Vibration Stabilization | Vibration has stopped or decreased | Vibration readings and stabilization time | Vibration stabilization is confirmed or rejected. |
+| OP15 | Suspend Conservation Activities | Chamber door is opened during conservation | Door-open signal | Normal conservation activities are suspended. |
+| OP16 | Verify Conditions Before Resuming | Chamber door is closed again | Environmental readings and sensor status | Conditions are verified before resuming. |
+| OP17 | Switch to Emergency Power | Normal power is lost | Power-loss signal | Emergency power is activated if available. |
+| OP18 | Record Power Incident | Normal and emergency power are unavailable | Power-loss information | Power incident is recorded. |
+| OP19 | Perform Safe Shutdown | No usable power is available | Power failure condition | System enters safe shutdown. |
+| OP20 | Verify Safe Artifact Removal | Operator requests artifact removal | Chamber safety and protection status | Artifact removal is approved or rejected. |
